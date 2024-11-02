@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICP Token Wallet</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <main>
+    <img src="assets/logo2.svg" alt="DFINITY Logo" />
+    <h1>ICP Token Wallet</h1>
+    
+    <section>
+      <h2>Wallet Balance</h2>
+      <button id="getBalanceButton">Get Balance</button>
+      <p id="balance">Balance: Loading...</p>
+    </section>
+
+    <section>
+      <h2>Send Tokens</h2>
+      <form id="sendForm">
+        <label for="recipient">Recipient Address:</label>
+        <input id="recipient" type="text" required />
+        
+        <label for="amountToSend">Amount:</label>
+        <input id="amountToSend" type="number" required />
+        
+        <button type="submit">Send Tokens</button>
+      </form>
+      <p id="sendStatus"></p>
+    </section>
+
+    <section>
+      <h2>Receive Tokens</h2>
+      <form id="receiveForm">
+        <label for="amountToReceive">Amount:</label>
+        <input id="amountToReceive" type="number" required />
+        
+        <button type="submit">Receive Tokens</button>
+      </form>
+      <p id="receiveStatus"></p>
+    </section>
+    
+    <script src="src/index.js"></script>
+  </main>
+</body>
+</html>
